@@ -1,0 +1,12 @@
+.movieListContainer {
+    padding: 15px 30px;
+    box-sizing: border-box;
+    column-gap: 30px;
+    justify-content: space-between;
+
+}
+.contentWrapper {
+    margin-top: 70px;
+    overflow-y: auto;
+    height: 700px;
+}

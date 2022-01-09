@@ -1,0 +1,46 @@
+.image-container {
+    /* width: 300px;
+    position: relative;
+    aspect-ratio: 0.75;
+    margin: 20px; */
+    max-width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-low {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}   
+
+
+.image-high {
+    opacity: 0;  
+    height: 200px;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+.remove {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.loaded {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.movieTitle {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 90px;
+}
+
+@media (max-width: 440px) {
+    .image-container {
+        max-width: 26%
+    }
+}
