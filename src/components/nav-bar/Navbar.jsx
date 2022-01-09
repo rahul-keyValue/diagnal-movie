@@ -21,10 +21,10 @@ const Navbar = () => {
     return (
         <div className="navbarContainer">
             <div className="d-flex  v-center search-wrapper">
-                <img src="../../../public/assets/Back.png" alt="back" className="backButton" />
+                <img src={`${process.env.PUBLIC_URL}/assets/Back.png`} alt="back" className="backButton" />
                 <input type="text" onChange={(e) => setSearchKeyword(e.target.value)} placeholder="Search for Movies" onKeyUp={(e) => searchOnEnter(e)} />
             </div>
-            <img src="../../../public/assets/search.png" alt="back" className="backButton" onClick={() => dispatch({ type: SET_SEARCH_KEYWORD, data: searchKeyword })} />
+            <img src={`${process.env.PUBLIC_URL}/assets/search.png`} alt="back" className="backButton" onClick={() => dispatch({ type: SET_SEARCH_KEYWORD, data: searchKeyword })} />
         </div>
 
     );

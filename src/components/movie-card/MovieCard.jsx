@@ -22,8 +22,8 @@ const  MovieCard = (props) => {
              { isInViewPort &&
                  (
                      <>
-                   <img src={fallBackimage ? fallBackimage : `../../../public/assets/${posterPath}`} alt="not available" 
-                   onError={() => setFallBackImage('../../../public/assets/placeholder_for_missing_posters.png')}
+                   <img src={fallBackimage ? fallBackimage : `${process.env.PUBLIC_URL}/assets/${posterPath}`} alt="not available" 
+                   onError={() => setFallBackImage(`process.env.PUBLIC_URL/assets/placeholder_for_missing_posters.png`)}
                    ref={imageRef}
                    className={`image-high ${isMainImageLoaded && 'loaded'}`} onLoad={() => setIsMainImageLoaded(true)}/>
                     <span className="movieTitle">{title}</span>
