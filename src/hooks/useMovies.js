@@ -31,8 +31,6 @@ const useMovies = () => {
         }
     }
 
-
-
     return {
         getMovies,
     }

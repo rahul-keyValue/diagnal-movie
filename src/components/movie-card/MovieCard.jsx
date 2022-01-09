@@ -8,6 +8,7 @@ const  MovieCard = (props) => {
     const [isInViewPort, setIsInViewPort] = useState(false);
     const [isMainImageLoaded, setIsMainImageLoaded] = useState(false);
     const [fallBackimage, setFallBackImage] = useState("");
+    
     const imageContainerRef = useRef(null);
     const imageRef = useRef(null);
 

@@ -32,7 +32,7 @@ const useImageIntersection = (element, callback) => {
     return () => {
       observer.unobserve(element?.current);
     }
-  }, [])
+  }, []);
 
 
 };

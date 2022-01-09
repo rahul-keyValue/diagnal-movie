@@ -38,3 +38,9 @@
     font-size: 16px;
     margin-bottom: 90px;
 }
+
+@media (max-width: 440px) {
+    .image-container {
+        max-width: 26%
+    }
+}
